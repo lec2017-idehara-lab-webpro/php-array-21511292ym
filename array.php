@@ -12,7 +12,9 @@ $fruits = [
   'apple' => 'red',
   'orange' => 'orange',
   'strawberry' => 'red',
-];
+];    
+$fruits['grape'] = 'grape';      
+      
 foreach($fruits as $c)
 {
   print($c);
@@ -25,10 +27,14 @@ print( $name[1] ); // MIKE
 
 print('<hr \>');
 
+print('<table border>')
+    
 foreach($fruits as $f => $c)
 {
-  print("$f, $c");
+  print(<"<tr></tr><td>$f</td><td>$c</td>");
 }
+
+print('</table>')
 
  ?>
 
